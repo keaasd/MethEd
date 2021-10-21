@@ -4,7 +4,7 @@
 	
  }
  .container {
-	 padding-right: 50%;
+	 /* padding-right: 50%; */
  }
 .header__container {
  display: flex;
@@ -15,7 +15,7 @@
  }
  
  .header__logo {
- width: 124px;
+ /* width: 124px; */
  
  }
  .header__contacts {
@@ -30,7 +30,7 @@
  }
  .header__contacts-burger {
 	display: block;
-	width: 27px;
+	/* width: 27px; */
 	height: 14px;
 	background-image: url(../img/menu.svg)
  }.
