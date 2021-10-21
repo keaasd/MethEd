@@ -3,6 +3,9 @@
 	min-height: 60px;
 	
  }
+ .container {
+	 padding-right: 50%;
+ }
 .header__container {
  display: flex;
  justify-content: space-between;
