@@ -1,7 +1,8 @@
 .header {
-	background-color: #F1B7C8;
+	background-color: #A1B7C8;
 	min-height: 60px;
-	
+	padding-top: 13px;
+    padding-bottom: 13px;
  }
  .container {
 	 /* padding-right: 50%; */
@@ -9,34 +10,32 @@
 .header__container {
  display: flex;
  justify-content: space-between;
- padding-top: 13px;
- padding-bottom: 13px;
+ 
  align-items: center;
  }
  
- .header__logo {
- /* width: 124px; */
- 
- }
- .header__contacts {
-	 position: absolute;
-	 /* display:  none*/;
-	 background-color: #A1B7C8;
-	 top: 61px;
-	 left: 0;
-	 right: 0; 
-	 padding: 30px 15px;
-	 color: #fff;
+.header__logo {
+	width: 124px;
+}
+.header__contacts {
+	/* position: absolute; */
+	display:  none;
+	background-color: #A1B7C8;
+	top: 61px;
+	left: 0;
+	right: 0; 
+	padding: 30px 15px;
+	color: #fff;
  }
  .header__contacts-burger {
 	display: block;
-	/* width: 27px; */
+	width: 27px;
 	height: 14px;
 	background-image: url(../img/menu.svg)
- }.
+ }
 
 
-.contacts__head{
+.contacts__head {
 	margin-bottom: 7px;
 	font-weight: 600;
 	font-size: 18px;
@@ -46,8 +45,11 @@
 .contacts__head_social{
 	margin-bottom: 12px;
 }
-.contacts__item:not(:last-child){
-margin-bottom: 50 px;
+.contacts__item{
+	margin-bottom: 50 px;
+}
+.contacts__item:last-child {
+	margin-bottom: 0 px;
 }
 .contacts__link{
 	
@@ -59,14 +61,14 @@ display: flex;
 
 }
 .contacts__social-item{ /*:not(:last-child)*/
-margin-right: 18px;
+	margin-right: 18px;
 }
 .contacts__social-item:last-child{
 	margin-right: 0;
 }
 .contacts__social-link{
 	display: block;
-	
+	width: 26px;
 	height: 26px;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -88,3 +90,56 @@ background-image: url(../img/facebook.svg);
 background-image: url(../img/telegram.svg);
 }
 
+@media (min-width: 768px) {
+	.header {
+		min-height: 100px;
+		padding: 28 0px;
+	}
+	.header__contacts{
+		top: 101;
+		padding: 40px;
+	}
+	.header__logo {
+		width: 180x;
+	}
+	.contacts__list{
+		display: flex;
+		justify-content: space-between;
+	}
+	.contacts__item{
+		margin-bottom: 0;
+	}
+}
+@media (min-width: 992px) {
+	.header{
+		position: fixed;
+		
+		padding: 50px 0;
+	}
+	.header__container {
+		height: 100%;
+		flex-direction: column;
+		align-items: flex-end; /* прижать к краю*/
+	}
+	.header__contacts-burger {
+		display: none;
+	}
+	.header__contacts {
+		position: static;
+		display: block;
+		padding: 0;
+	}
+	.contacts__list {
+		flex-direction: column;
+	}
+	.contacts__item:not(:last-child){
+		margin-bottom: 50px;
+
+	}
+}
+@media (min-width: 1440px) {
+	.header {
+		padding-top: 60px;
+	}
+
+}
