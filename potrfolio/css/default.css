@@ -47,3 +47,10 @@ ul {
 h1, h2, h3, p {
     margin: 0;
 }
+.container {
+    padding: 0 15px; /* верх-низ лево-право*/
+    margin: 0 auto; /* верх-низ лево-право*/
+} 
+section {
+    padding: 30px 0;
+}
