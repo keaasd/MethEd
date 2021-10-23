@@ -14,7 +14,7 @@
 
 
 }
-.adventage__item {
+.advantage__item {
     flex-basis: 290px; /* будет занимать весь размер */
     min-height: 61px;
     font-size: 14px;
@@ -25,7 +25,7 @@
     padding: 10px 10px 10px 81px;
 
 }
-.adventage__item_stack {
+.advantage__item_stack {
     background-image: url("../img/stack.svg");
 }
 .advantage__item_mockup {

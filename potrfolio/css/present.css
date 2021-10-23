@@ -1,21 +1,21 @@
 .present__photo {
 width: 100%;
+/* height: 300px; */
 object-fit: cover; /* картинка искажаться не будет*/
 margin-bottom: 20px;
+
 }
 
 .present__group-title {
     margin-bottom: 18px;
-
 }
 
 .present__title {
     margin-bottom: 10px;
     font-weight: 700; /*вместо bold пишем 700*/
-font-size: 34px;
-line-height: 120%;
-text-transform: uppercase;
-
+    font-size: 34px;
+    line-height: 120%;
+    text-transform: uppercase;
 }
 
 .present__subtitle {
@@ -23,29 +23,43 @@ text-transform: uppercase;
 font-size: 16px;
 line-height: 120%;
 text-transform: uppercase;
-
 }
 
 .present__description {
     margin-bottom: 20px;
 font-size: 14px;
 line-height: 140%;
-
 }
-.
+
 .present__order-btn {
-    padding: 16px 60px;
     background-color: #E87C40;
     border-radius: 4px;
-    
-font-size: 14px;
-line-height: 140%;
-text-transform: uppercase;
-color: #FFFFFF;
+    font-size: 14px;
+    line-height: 140%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding: 16px 60px;
 
-flex: none;
-order: 0;
-flex-grow: 0;
-margin: 0px 10px;
+    /* flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 10px; */
+    
+}
+@media (min-width: 480px){
+    .present__container {
+        display: flex;
+    }
+    .present__photo {
+        width: 50%;
+        margin-right: 15px;
+        margin-bottom: 0;
+    }
+    .present__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start; /*кнопка не растягивается*/ 
+    }
 
 }

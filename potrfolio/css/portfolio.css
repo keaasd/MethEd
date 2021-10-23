@@ -1,0 +1,72 @@
+.portfolio__title {
+    font-weight: bold;
+font-size: 30px;
+line-height: 120%;
+text-transform: uppercase;
+margin-bottom: 40px;
+}
+
+.card {
+    box-sizing: border-box;
+    min-width: 252px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 14px; 
+}
+.card__picture{
+    align-self: center;
+    width: 155px;
+    height: 92px;
+    padding: 5px 18px;
+    background-image: url("../img/MacbookPro.svg");
+    background-size: cover; /*была уменьшиная, а теперь встала как надо*/
+    margin-bottom: 30px;
+}
+.card__data {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 23px;
+}
+.card__client {
+    line-height: 120%;
+
+}
+
+.card__date" {
+    line-height: 140%;
+}
+
+.card__title {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 120%;
+
+}
+.portfolio__slider {
+    position: relative; /*тчобы стрелки привязывать через absolut*/
+    min-width: 290px; /*тчобы стрелки влево не улетали*/
+    margin: 0 auto;
+}
+.portfolio__arrow {
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateX(-50%); /*центр картинки, а не край ровняет*/
+    width: 26px;
+    height: 26px;
+    background-image: url("../img/arrow.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain; /* картинка не выпадет из размеров*/
+}
+
+.portfolio__arrow_left{
+    left: 0;
+}
+.portfolio__arrow_right{
+    right: 0;
+    transform: rotate(180deg); /*разворот на 180 град, картинку*/
+}

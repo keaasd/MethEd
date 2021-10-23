@@ -16,7 +16,7 @@
  
 .header__logo {
 	width: 124px;
-	
+
 }
 .header__contacts {
 	/* position: absolute; */
@@ -101,7 +101,7 @@ background-image: url(../img/telegram.svg);
 		padding: 40px;
 	}
 	.header__logo {
-		width: 180x;
+		width: 180 px;
 	}
 	.contacts__list{
 		display: flex;
@@ -132,6 +132,7 @@ background-image: url(../img/telegram.svg);
 	}
 	.contacts__list {
 		flex-direction: column;
+		padding-left: 40px; /*добавил*/
 	}
 	.contacts__item:not(:last-child){
 		margin-bottom: 50px;
