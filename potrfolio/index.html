@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/index.css">
-    
-    <link defer src="js/index.js">
-    <link defer src="js/swiper-bundle.min.js">
+        
+    <script defer src="js/jquery-3.6.0.min.js"></script>
+    <script defer src="js/swiper-bundle.min.js"></script>
+    <script defer src="js/index.js"></script>
     
 </head>
 <body class="page">
@@ -162,7 +163,49 @@
                 </div>
             </div>
         </section>
+        <div class="page__overlay">
+            <div class="modal">
+                <h2 class="modal__title">заполните форму и я свяжусь с вами</h2>
+                <form action="modal__form callback">
+                    <label class="callback__label">
+                        <span class="callback__label-text">ФИО</span>
+                        <input class="callback__input"   type="text" name="bio" placeholder="Введите ваше ФИО">
+                    </label>
+                    
+                    <label class="callback__label">
+                        <span class="callback__label-text">Телефон</span>
+                        <input class="callback__input"   type="text" name="phone" placeholder="Введите ваш номер телефона">
+                    </label>
 
+                    <fieldset class="callback__group connect">
+                        <legend class="connect__title" ></legend>
+                        
+                    <label class="connect__label">
+                        <input type="radio" class="connect__radio" name="connect" value="telegram"> </input>
+                        <span class="connect__text">Телеграм</span>
+                    </label>
+
+                    <label class="connect__label">
+                        <input type="radio" class="connect__radio" name="connect" value="whatsup"> </input>
+                        <span class="connect__text">Whatsup</span>
+                    </label>
+                    <label class="connect__label">
+                        <input type="radio" class="connect__radio" name="connect" value="coll"> </input>
+                        <span class="connect__text">Позвонить</span>
+                    </label>
+                    <label class="connect__label">
+                        <input type="radio" class="connect__radio" name="connect" value="viber"> </input>
+                        <span class="connect__text">Viber</span>
+                    </label>
+                    
+                    </fieldset>
+
+                    <button class="callback__btn">Заказать</button>
+<!-- 14:56 вренмя видео-->
+                </form>
+            </div>
+
+        </div>
     </main> 
 </body>
 </html>

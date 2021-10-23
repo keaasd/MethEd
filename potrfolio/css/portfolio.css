@@ -96,11 +96,25 @@ margin-bottom: 40px;
 }
 @media (min-widht: 1440px) {
     .portfolio_slider {
-        max-width: 690px
+        max-width: 825px
     
     }
     .portfolio__title {
-        font-size: 40px;
+        font-size: 50px;
 
+    }
+    .card__date {
+        font-style: 16px;
+    }
+    .card__title {
+        font-style: 18px;
+    }
+    .card {
+        max-width: 366px;
+    }
+    .card__picture {
+        width: 213px;
+        height: 126px;
+        padding: 6px 26px 15px;
     }
 }
