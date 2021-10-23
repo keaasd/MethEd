@@ -61,6 +61,7 @@ margin-bottom: 40px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain; /* картинка не выпадет из размеров*/
+    z-index: 5;
 }
 
 .portfolio__arrow_left{
@@ -69,4 +70,37 @@ margin-bottom: 40px;
 .portfolio__arrow_right{
     right: 0;
     transform: rotate(180deg); /*разворот на 180 град, картинку*/
+}
+.portfolio__arrow_disable {
+    opacity: 0.3;
+    pointer-events: none;
+}
+@media (min-widht: 480px) {
+    .portfolio_slider {
+        max-width: 340px;
+    }
+    .portfolio__title {
+        font-size: 40px;
+
+    }
+}
+@media (min-widht: 480px) {
+    .portfolio_slider {
+    max-width: 688px
+    }
+}
+@media (min-widht: 992px) {
+    .portfolio_slider {
+    max-width: 690px
+    }
+}
+@media (min-widht: 1440px) {
+    .portfolio_slider {
+        max-width: 690px
+    
+    }
+    .portfolio__title {
+        font-size: 40px;
+
+    }
 }
