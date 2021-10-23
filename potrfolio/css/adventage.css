@@ -1,0 +1,134 @@
+.adventage__title {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 120%;
+    text-transform: uppercase;
+
+}
+.adventage__list {
+    display: flex;
+    flex-wrap: wrap; /* если не влезают, то с красной строки*/
+    gap: 20px; /* уже не надо задавать margin-right */
+    margin-bottom: 40px;
+    justify-content: center;
+
+
+}
+.adventage__item {
+    flex-basis: 290px; /* будет занимать весь размер */
+    min-height: 61px;
+    font-size: 14px;
+    line-height: 140%;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 61px;
+    padding: 10px 10px 10px 81px;
+
+}
+.adventage__item_stack {
+    background-image: url("../img/stack.svg");
+}
+.advantage__item_mockup {
+    background-image: url("../img/mockup.svg");
+
+}
+
+.advantage__item_inclusive {
+    background-image: url("../img/inclusiv.svg");
+
+}
+
+.advantage__item_adapt {
+    background-image: url("../img/adapt.svg");
+
+}
+
+.advantage__item_clear {
+    background-image: url("../img/clear.svg");
+
+}
+
+.advantage__item_copyright {
+    background-image: url("../img/copyrite.svg");
+
+}
+@media (min-width: 480px ) {
+.adventage__title {
+    font-size: 40px;
+    }
+    .adventage__item {
+        font-size: 16px;
+
+    
+    }
+    .adventage__list {
+        
+        gap: 20px; /* уже не надо задавать margin-right */
+        
+    
+    
+    }
+}
+@media (min-width: 768px) { /* начиная от такого размера экрана и больше*/ 
+    .adventage__list {
+        justify-content: space-between;
+        gap: 80px;
+    }
+    .adventage__title {
+        margin-bottom: 50px;
+    }
+
+.advantage__item_stack {
+    order: ;
+
+
+}
+
+.advantage__item_mockup {
+    order: 2;
+
+
+}
+
+.advantage__item_inclusive {
+    order: 4;
+
+
+}
+
+.advantage__item_adapt {
+    order: 1;
+
+
+}
+
+.advantage__item_clear {
+    order: 3;
+
+
+}
+
+.advantage__item_copyright {
+    order: 5;
+
+
+}
+
+
+
+}
+@media (min-width: 1440px) {
+    .adventage__title {
+        font-size: 50px;
+        margin-bottom: 80px;
+    }
+    .adventage__list {
+        
+        gap: 100px;
+    }
+    .adventage__item {
+        font-size: 18px;
+
+    
+    }
+}
