@@ -6,11 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/index.css">
+    
+    <link defer href="js/swiper-bundle.min.js">
+    <link defer href="js/index.js">
 </head>
 <body class="page">
     <header class="page__header header">
         <div class="container header__container">
-            <img class="header__logo" src="img/logo.svg" alt="логотип Евгена" width="445px" height="668px">
+            <img class="header__logo" src="img/logo.svg" alt="логотип Евгена" >
 
             <address class="header__contacts contacts">
                 <ul class="contacts__list">
@@ -48,12 +51,12 @@
             <button class="header__contacts-burger"></button>
         </div>
 </header>
-
+<!-- width="445px" height="668px -->
     <main>
         <section class="present">
-            <div class="container">
-                <img src="img/Korotin.jpg" alt="логотип Евгения" class="present__photo">  
-                <div class="present__contant">
+            <div class="container present__container">
+                <img src="img/Korotin.jpg" alt="логотип Евгения" class="present__photo" >  
+                <div class="present__content">
                     <hgroup class="present__group-title">
                         <h1 class="present__title">Коротин Евгений</h1>
                         <h2 class="present__subtitle">Разработчик сайтов</h2>
@@ -84,13 +87,13 @@
             <div class="container">
                 <h2 class="portfolio__title">Портфолио</h2>
 
-                <div class="portfolio__slider">
-                    <ul class="portfolio__list">
-                        <li class="portfolio__item" id="1">
+                <div class="portfolio__slider swiper">
+                    <ul class="portfolio__list swiper-wrapper">
+                        <li class="portfolio__item swiper-slide" id="1">
                             <article class="card">
                                 <img src="img/card__data-1.jpg" alt="#" class="card__picture">
                                 <p class="card__data">
-                                    <span class="card__client">Клиент</span>
+                                    <span class="card__client">Клиент: Cinema</span>
                                     <time class="card__date" datetime="2020">год: 2020 </time>                                                                
                                 </p>
 
@@ -99,7 +102,7 @@
 
                         </li>
 
-                        <li class="portfolio__item">
+                        <li class="portfolio__item swiper-slide">
                             <article class="card">
                                 <img src="img/card__data-2.jpg" alt="#" class="card__picture" id="2">
                                 <p class="card__data">
@@ -112,7 +115,7 @@
                             
                         </li>
 
-                        <li class="portfolio__item">
+                        <li class="portfolio__item swiper-slide">
                             <article class="card">
                                 <img src="img/card__data-2.jpg" alt="#" class="card__picture" id="3">
                                 <p class="card__data">
@@ -125,7 +128,7 @@
 
                         </li>
 
-                        <li class="portfolio__item">
+                        <li class="portfolio__item swiper-slide">
                             <article class="card">
                                 <img src="img/card__data-4.jpg" alt="#" class="card__picture" id="4">
                                 <p class="card__data">
@@ -138,7 +141,7 @@
 
                         </li>
 
-                        <li class="portfolio__item">
+                        <li class="portfolio__item swiper-slide">
                             <article class="card">
                                 <img src="img/card__data-5.jpg" alt="#" class="card__picture" id="5">
                                 <p class="card__data">
@@ -153,6 +156,8 @@
 
 
                     </ul>
+                    <button class="portfolio__arrow portfolio__arrow_left"></button>
+                    <button class="portfolio__arrow portfolio__arrow_right"></button>
                 </div>
             </div>
         </section>
