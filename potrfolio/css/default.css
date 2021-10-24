@@ -35,9 +35,11 @@ a {
     text-decoration: none;
     color: inherit;
 }
+
 address {
     font-style: normal;
 }
+
 ul {
     list-style-type: none;
     padding: 0;
@@ -47,14 +49,29 @@ ul {
 h1, h2, h3, p {
     margin: 0;
 }
+
 .container {
     max-width: 1100px;
     padding: 0 15px; /* верх-низ лево-право*/
     margin: 0 auto; /* верх-низ лево-право*/
-} 
+}
+
 section {
     padding: 30px 0;
 }
+
+.page__overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .6);
+    overflow: auto;
+    padding: 15px;
+    display: flex;
+}
+
 @media (min-width: 768px) {
 	.container {
 		padding: 0 40px;
