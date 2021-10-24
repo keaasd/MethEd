@@ -94,7 +94,7 @@ section {
     
     .page__header {
         width: 355px; /*1440px - 355px чтобы вычислить градиен выше*/
-       	left: calc(50%-720px);
+        left: calc(50% - 720px);
 		
     }
 }

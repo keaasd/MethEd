@@ -10,7 +10,7 @@ new Swiper(".swiper", {
                 fill: 'row',
                 rows: 2
             } 
-        }
+        },
         768: {
             slidesPerView: 2,
             grid: {

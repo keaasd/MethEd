@@ -47,10 +47,10 @@
 	margin-bottom: 12px;
 }
 .contacts__item{
-	margin-bottom: 50 px;
+	margin-bottom: 50px;
 }
 .contacts__item:last-child {
-	margin-bottom: 0 px;
+	margin-bottom: 0px;
 }
 .contacts__link{
 	
@@ -94,14 +94,14 @@ background-image: url(../img/telegram.svg);
 @media (min-width: 768px) {
 	.header {
 		min-height: 100px;
-		padding: 28 0px;
+		padding: 28px 0px;
 	}
 	.header__contacts{
-		top: 101;
+		top: 101px;
 		padding: 40px;
 	}
 	.header__logo {
-		width: 180 px;
+		width: 180px;
 	}
 	.contacts__list{
 		display: flex;
