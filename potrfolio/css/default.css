@@ -76,9 +76,17 @@ section {
 	.container {
 		padding: 0 40px;
 	}
-
+    section {
+        padding: 50px 0;
+    }
 }
 @media (min-width: 992px) {   
+    .container {
+		padding: 0 30px 0 270px;
+	}
+    section {
+        padding: 65px 0;
+    }
     .page__header {
         width: 240px;
         position: fixed; 
@@ -91,10 +99,15 @@ section {
     .page {
         background-image: linear-gradient(to right, #A1B7C8 25%, transparent 25.5% );
     }
-    
+    section {
+        padding: 75px 0;
+    }
     .page__header {
         width: 355px; /*1440px - 355px чтобы вычислить градиен выше*/
         left: calc(50% - 720px);
+        /* left: 0; */
+        top: 0;
+        /* height: 100%; */
 		
     }
 }

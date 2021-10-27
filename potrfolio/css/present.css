@@ -63,3 +63,44 @@ line-height: 140%;
     }
 
 }
+
+@media (min-width: 768px) {
+    .present {
+        padding-top: 70px;
+    }
+}
+
+@media (min-width: 992px) {
+    .present {
+        position: relative;
+    }
+    .present::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: block;
+        width: 40%;
+        height: 100%;
+        background-color: #A1B7C8;
+        z-index: -1;
+
+    }
+}
+@media (min-width: 1440px) {
+    .present__photo {
+        width: 445px;
+
+    }
+    .present__group-title {
+        margin-bottom: 60px;
+
+    }
+    .present__title {
+        margin-bottom: 20px;
+        font-size: 50px;
+    }
+    .present__description {
+        font-size: 18px;
+    }
+}

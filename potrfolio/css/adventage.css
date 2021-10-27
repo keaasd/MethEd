@@ -123,12 +123,14 @@
         margin-bottom: 80px;
     }
     .adventage__list {
-        
+        display: inline-block;
         gap: 100px;
     }
     .adventage__item {
         font-size: 18px;
 
-    
+    }
+    .adventage {
+       
     }
 }
