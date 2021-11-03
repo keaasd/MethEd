@@ -1,11 +1,11 @@
-.adventage__title {
+.advantage__title {
     font-weight: bold;
     font-size: 30px;
     line-height: 120%;
     text-transform: uppercase;
 
 }
-.adventage__list {
+.advantage__list {
     display: flex;
     flex-wrap: wrap; /* если не влезают, то с красной строки*/
     gap: 20px; /* уже не надо задавать margin-right */
@@ -53,15 +53,15 @@
 
 }
 @media (min-width: 480px ) {
-.adventage__title {
+.advantage__title {
     font-size: 40px;
     }
-    .adventage__item {
+    .advantage__item {
         font-size: 16px;
 
     
     }
-    .adventage__list {
+    .advantage__list {
         
         gap: 20px; /* уже не надо задавать margin-right */
         
@@ -70,11 +70,11 @@
     }
 }
 @media (min-width: 768px) { /* начиная от такого размера экрана и больше*/ 
-    .adventage__list {
+    .advantage__list {
         justify-content: space-between;
         gap: 80px;
     }
-    .adventage__title {
+    .advantage__title {
         margin-bottom: 50px;
     }
 
@@ -118,19 +118,19 @@
 
 }
 @media (min-width: 1440px) {
-    .adventage__title {
+    .advantage__title {
         font-size: 50px;
         margin-bottom: 80px;
     }
-    .adventage__list {
+    .advantage__list {
         display: inline-block;
         gap: 100px;
     }
-    .adventage__item {
+    .advantage__item {
         font-size: 18px;
 
     }
-    .adventage {
+    .advantage {
        
     }
 }

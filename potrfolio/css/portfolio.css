@@ -81,27 +81,23 @@ margin-bottom: 40px;
     }
     .portfolio__title {
         font-size: 40px;
+    }
+}
 
-    }
-}
-@media (min-width: 480px) {
-    .portfolio__slider {
-    max-width: 688px
-    }
-}
 @media (min-width: 768px) {
     .portfolio__slider {
-    max-width: 688px
+    max-width: 688px;
     }
 }
 @media (min-width: 992px) {
     .portfolio__slider {
-    max-width: 690px
+    max-width: 690px;
     }
 }
 @media (min-width: 1440px) {
     .portfolio__slider {
-        max-width: 825px
+        font-size: 50px;
+        max-width: 825px;
     
     }
     .portfolio__title {
@@ -109,7 +105,7 @@ margin-bottom: 40px;
 
     }
     .card__date {
-        font-size 16px;
+        font-size: 16px;
     }
     .card__title {
         font-size: 18px;
